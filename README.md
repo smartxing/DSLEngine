@@ -119,7 +119,8 @@ ValidateContext 对象内容
 
 
 ```
-#####  提供了一些常用的 方法  比如 success fail 标识本次结果校验是否成功 对执行的结果展示一下
+#####  提供了一些常用的 方法  比如 success() fail() 标识本次结果校验是否成功 
+#### 对执行的结果解释一下
 ```properties
 {
 	"success": true,  最终的结果是否成功
