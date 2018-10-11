@@ -29,8 +29,7 @@ public class EngineTest {
         billDomain.setBalance(2.01f);
         paramsPart.put("billdomain", billDomain);
         RuleEngineExecutors ruleEngineExecutors = new RuleEngineExecutors(ruleEngineContext);
-        String io = IOUtils.toString(new FileInputStream(
-            "/Users/xingliangbo/Documents/workspace_bill/DslEngine/src/main/resources/groovy.script/test2.groovy"));
+        String io = IOUtils.toString(new FileInputStream("路径自行修改resources/groovy.script/test2.groovy"));
         ValidateContext validateContext = ruleEngineExecutors.defination(io);
         Gson gson = new GsonBuilder().disableHtmlEscaping().create();
         System.out.println(gson.toJson(validateContext));

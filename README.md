@@ -72,7 +72,7 @@ rules {
         paramsPart.put("billdomain", billDomain);
         //构造执行器
         RuleEngineExecutors ruleEngineExecutors = new RuleEngineExecutors(ruleEngineContext);
-        String io = IOUtils.toString(new FileInputStream("/Users/xingliangbo/Documents/workspace_bill/DslEngine/src/main/resources/groovy.script/test.groovy"));
+        String io = IOUtils.toString(new FileInputStream("路径自行修改resources/groovy.script/test2.groovy"));
         //执行产生结果
         ValidateContext validateContext = ruleEngineExecutors.defination(io);
         //后续就可以对结果 报表展示啊 或者数据补救措施
